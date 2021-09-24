@@ -26,21 +26,20 @@
   <div class="back-to-top"></div>
 
   <header>
-    <div class="topbar">
+      <div class="topbar">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="#"><span class="mai-call text-primary"></span> +94 112044555</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="#"><span class="mai-mail text-primary"></span> uhkdu@kdu.ac.lk</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
             <div class="social-mini-button">
               <a href="#"><span class="mai-logo-facebook-f"></span></a>
               <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
               <a href="#"><span class="mai-logo-instagram"></span></a>
             </div>
           </div>
@@ -109,18 +108,24 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
-
-
             <div class="row">
               <div class="col-lg-12 py-3 wow zoomIn">
                 <div class="card">
                   <div class="card-header">
-                    <p class="font-weight-bold">Doctors</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p class="font-weight-bold">Doctors</p>
+                      </div>
+                       <div class="col-md-6">
+                          <button type="button" class="btn btn-primary float-right"  data-toggle="modal" data-target="#exampleModal">Add New Doctors</button>
+                      </div>
+                    </div>
                   </div>
+                 
                 <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th scope="col">#</th>
+                          <th scope="col">ID</th>
                           <th scope="col">Name</th>
                           <th scope="col">Hospital</th>
                           <th scope="col">Contact No</th>
@@ -166,18 +171,23 @@
                   </div>
               </div>
             </div>
-
-
             <div class="row">
               <div class="col-lg-12 py-3 wow zoomIn">
                 <div class="card">
                   <div class="card-header">
-                    <p class="font-weight-bold">Nurses</p>
+                      <div class="row">
+                      <div class="col-md-6">
+                          <p class="font-weight-bold">Nurses</p>
+                      </div>
+                       <div class="col-md-6">
+                          <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Add New Nurses</button>
+                      </div>
+                    </div>
                   </div>
                 <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th scope="col">#</th>
+                          <th scope="col">ID</th>
                           <th scope="col">Name</th>
                           <th scope="col">Hospital</th>
                           <th scope="col">Contact No</th>
@@ -229,16 +239,25 @@
               <div class="col-lg-12 py-3 wow zoomIn">
                 <div class="card">
                   <div class="card-header">
-                    <p class="font-weight-bold">Attendant</p>
+                         <div class="row">
+                      <div class="col-md-6">
+                          <p class="font-weight-bold">Attendant</p>
+                      </div>
+                       <div class="col-md-6">
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModalLong">
+                         Add New Attendant
+                          </button>
+                      </div>
+                    </div>
                   </div>
                 <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th scope="col">#</th>
+                          <th scope="col">ID</th>
                           <th scope="col">Name</th>
                           <th scope="col">Hospital</th>
                           <th scope="col">Contact No</th>
-                          <th scope="col">Specialists</th>
+                          <th scope="col">Age</th>
                           <th scope="col"></th>
                           <th scope="col"></th>
                           <th scope="col"></th>
@@ -250,7 +269,7 @@
                           <td>Kamal Ariyarathne</td>
                           <td>KDU</td>
                           <td>071887787</td>
-                          <td>ENT</td>
+                          <td>41</td>
                           <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
                           <td> <a href="#" className="btn"> Update </a> </td>
                           <td> <a href="#" className="btn" >Delete</a> </td>
@@ -260,7 +279,7 @@
                           <td>Nimal Perera</td> 
                           <td>KDU</td>
                           <td>0768867678</td>
-                          <td>##########</td>
+                          <td>30</td>
                           <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
                           <td> <a href="#" className="btn"> Update </a> </td>
                           <td> <a href="#" className="btn" >Delete</a> </td>
@@ -270,7 +289,7 @@
                           <td>Thilini Perera</td>
                           <td>KDU</td>
                           <td>0756655665</td>
-                          <td>##########</td>
+                          <td>50</td>
                           <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
                           <td> <a href="#" className="btn"> Update </a> </td>
                           <td> <a href="#" className="btn" >Delete</a> </td>
@@ -385,7 +404,7 @@
     </div> <!-- .container -->
   </div> <!-- .page-section -->
 
-  <div class="page-section">
+<!--   <div class="page-section">
     <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
 
@@ -420,10 +439,10 @@
         <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
       </form>
     </div> <!-- .container -->
-  </div> <!-- .page-section -->
+  
   
 
-  <div class="page-section banner-home bg-image" style="background-image: url(../assets/img/banner-pattern.svg);">
+  <!-- <div class="page-section banner-home bg-image" style="background-image: url(../assets/img/banner-pattern.svg);">
     <div class="container py-5 py-lg-0">
       <div class="row align-items-center">
         <div class="col-lg-4 wow zoomIn">
@@ -439,7 +458,7 @@
       </div>
     </div>
   </div> <!-- .banner-home -->
-
+ 
   <footer class="page-footer">
     <div class="container">
       <div class="row px-md-3">
@@ -491,6 +510,56 @@
       <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
     </div>
   </footer>
+     <!-- Modal -->
+                  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Doctors</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                   <label className="label-text">First Name</label>
+                                   <input type="text" class="form-control"placeholder="First Name"></input>
+                              </div>
+                                <div class="col-sm-6">
+                                   <label className="label-text">Last Name</label>
+                                   <input type="text" class="form-control"placeholder="Last Name"></input>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                               <div class="col-sm-6">
+                                   <label className="label-text">Age</label>
+                                   <input type="number" class="form-control"placeholder="Age"></input>
+                              </div>
+                              <div class="col-sm-6">
+                                   <label className="label-text">Contact Number</label>
+                                   <input type="number" class="form-control"placeholder="Contact Number"></input>
+                              </div>
+                            </div>
+                               <div class="row mt-3">
+                               <div class="col-sm-6">
+                                   <label className="label-text">Specialists</label>
+                                   <input type="number" class="form-control"placeholder="Specialists"></input>
+                              </div>
+                              <div class="col-sm-6">
+                                   <label className="label-text">Email</label>
+                                   <input type="number" class="form-control"placeholder="Email"></input>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="modal-footer">
+                             <button type="button" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 <script src="../assets/js/jquery-3.5.1.min.js"></script>
 
@@ -501,6 +570,107 @@
 <script src="../assets/vendor/wow/wow.min.js"></script>
 
 <script src="../assets/js/theme.js"></script>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Attendat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+             <div class="row">
+                              <div class="col-sm-6">
+                                   <label className="label-text">First Name</label>
+                                   <input type="text" class="form-control"placeholder="First Name"></input>
+                              </div>
+                                <div class="col-sm-6">
+                                   <label className="label-text">Last Name</label>
+                                   <input type="text" class="form-control"placeholder="Last Name"></input>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                               <div class="col-sm-6">
+                                   <label className="label-text">Age</label>
+                                   <input type="number" class="form-control"placeholder="Age"></input>
+                              </div>
+                              <div class="col-sm-6">
+                                   <label className="label-text">Contact Number</label>
+                                   <input type="number" class="form-control"placeholder="Contact Number"></input>
+                              </div>
+                            </div>
+                               <div class="row mt-3">
+                               <div class="col-sm-6">
+                                   <label className="label-text">Ward Number</label>
+                                   <input type="number" class="form-control"placeholder="Ward Number"></input>
+                              </div>
+                              <div class="col-sm-6">
+                                   <label className="label-text">Email</label>
+                                   <input type="email" class="form-control"placeholder="Email"></input>
+                              </div>
+                            </div>
+      </div>
+      <div class="modal-footer">
+           <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
   
+                              <div class="modal bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Nurses</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                              <div class="col-sm-6">
+                                   <label className="label-text">First Name</label>
+                                   <input type="text" class="form-control"placeholder="First Name"></input>
+                              </div>
+                                <div class="col-sm-6">
+                                   <label className="label-text">Last Name</label>
+                                   <input type="text" class="form-control"placeholder="Last Name"></input>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                               <div class="col-sm-6">
+                                   <label className="label-text">Age</label>
+                                   <input type="number" class="form-control"placeholder="Age"></input>
+                              </div>
+                              <div class="col-sm-6">
+                                   <label className="label-text">Contact Number</label>
+                                   <input type="number" class="form-control"placeholder="Contact Number"></input>
+                              </div>
+                            </div>
+                               <div class="row mt-3">
+                               <div class="col-sm-6">
+                                   <label className="label-text">Ward Number</label>
+                                   <input type="number" class="form-control"placeholder="Ward Number"></input>
+                              </div>
+                              <div class="col-sm-6">
+                                   <label className="label-text">Email</label>
+                                   <input type="number" class="form-control"placeholder="Email"></input>
+                              </div>
+                            </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Save</button>
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 </body>
 </html>
