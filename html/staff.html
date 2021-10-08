@@ -136,8 +136,8 @@
                     <td>KDU</td>
                     <td>071887787</td>
                     <td>ENT</td>
-                    <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
-                    <td> <a href="#" className="btn"> Update </a> </td>
+                    <td> <a href="viewDoctorsDetails.html" className="btn"> View </a> </td>
+                    <td> <a data-toggle="modal" data-target=".bd-example-modal-lg" className="btn"> Update </a> </td>
                     <td> <a href="#" className="btn" >Delete</a> </td>
                   </tr>
                   <tr>
@@ -147,7 +147,7 @@
                     <td>0768867678</td>
                     <td>Dermatologists</td>
                     <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
-                    <td> <a href="#" className="btn"> Update </a> </td>
+                    <td> <a data-toggle="modal" data-target=".bd-example-modal-lg" className="btn"> Update </a> </td>
                     <td> <a href="#" className="btn" >Delete</a> </td>
                   </tr>
                   <tr>
@@ -157,7 +157,7 @@
                     <td>0756655665</td>
                     <td>Ophthalmologists</td>
                     <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
-                    <td> <a href="#" className="btn"> Update </a> </td>
+                    <td> <a  data-toggle="modal" data-target=".bd-example-modal-lg" className="btn"> Update </a> </td>
                     <td> <a href="#" className="btn" >Delete</a> </td>
                   </tr>
                 </tbody>
@@ -198,7 +198,7 @@
                     <td>KDU</td>
                     <td>071887787</td>
                     <td>No1</td>
-                    <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
+                    <td> <a href="viewNures.html" className="btn"> View </a> </td>
                     <td> <a href="#" className="btn"> Update </a> </td>
                     <td> <a href="#" className="btn" >Delete</a> </td>
                   </tr>
@@ -208,7 +208,7 @@
                     <td>KDU</td>
                     <td>0768867678</td>
                     <td>No2</td>
-                    <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
+                    <td> <a href="viewNures.html" className="btn"> View </a> </td>
                     <td> <a href="#" className="btn"> Update </a> </td>
                     <td> <a href="#" className="btn" >Delete</a> </td>
                   </tr>
@@ -218,7 +218,7 @@
                     <td>KDU</td>
                     <td>0756655665</td>
                     <td>No2</td>
-                    <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
+                    <td> <a href="viewNures.html" className="btn"> View </a> </td>
                     <td> <a href="#" className="btn"> Update </a> </td>
                     <td> <a href="#" className="btn" >Delete</a> </td>
                   </tr>
@@ -264,7 +264,7 @@
                 <td>KDU</td>
                 <td>071887787</td>
                 <td>41</td>
-                <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
+                <td> <a href="viewAttendence.html" className="btn"> View </a> </td>
                 <td> <a href="#" className="btn"> Update </a> </td>
                 <td> <a href="#" className="btn" >Delete</a> </td>
               </tr>
@@ -274,7 +274,7 @@
                 <td>KDU</td>
                 <td>0768867678</td>
                 <td>30</td>
-                <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
+                <td> <a href="viewAttendence.html" className="btn"> View </a> </td>
                 <td> <a href="#" className="btn"> Update </a> </td>
                 <td> <a href="#" className="btn" >Delete</a> </td>
               </tr>
@@ -284,7 +284,7 @@
                 <td>KDU</td>
                 <td>0756655665</td>
                 <td>50</td>
-                <td> <a href="vewDoctorsDetails.html" className="btn"> View </a> </td>
+                <td> <a href="viewAttendence.html" className="btn"> View </a> </td>
                 <td> <a href="#" className="btn"> Update </a> </td>
                 <td> <a href="#" className="btn" >Delete</a> </td>
               </tr>
@@ -293,12 +293,16 @@
         </div>
       </div>
     </div>
-
-
+    <div class="row">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-primary mb-4">Download Report</button>
+    </div>
+  </div>  
   </div>
 </div>
 </div> 
-</div> 
+</div>
+
 
 
 
@@ -478,7 +482,7 @@
  </div>
 </div>
 </div>
-
+<!-- update -->
 <div class="modal bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -527,6 +531,24 @@
     </div>
   </div>
 </div>
+</div>
+<!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+<!-- Small modal -->
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
 </div>
 </body>
 </html>
