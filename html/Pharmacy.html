@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Pharmacy</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  
+  
+  <style>
+    
+    #stock {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #stock td, #stock th {
+      border: 1px groove #ddd;
+      padding: 5px;
+    }
+
+    #stock tr:nth-child(even){background-color: #f2f2f2;}
+
+    #stock tr:hover {background-color: #ddd;}
+
+    #stock th {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      background-color: #45b6fe;
+      color: black;
+    }
+
+
+    input[type=text] {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('searchicon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      
+    </style>
+    
+    
+    
+  </head>
+  <body>
+
+   <!-- Header Open-->
+   <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> +94 11 204 4555</a>
+              <span class="divider">|</span>
+              <a href="#"><span class="mai-mail text-primary"></span> uhkdu@kdu.ac.lk</a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="https://www.facebook.com/University-Hospital-KDU-1745027225787208"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#"><span class="mai-logo-twitter"></span></a>
+              <a href="#"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+     <img src="../assets/img/KDU Knowledge Store-logos_transparent.png" alt="uhkdu" width = "150px" >
+     <img src="../assets/img/uhkdu_text.png" alt="uhkdu" width = "500px">
+     <div class="container">
+      <div class="collapse navbar-collapse" id="navbarSupport">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+           <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Hospital
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="medical billing and claims.html">Medical Billing & Claims</a>
+          <a class="dropdown-item" href="ward_management.html">Ward Management</a>
+          <a class="dropdown-item" href="medical_schedule.html">Medical Schedule</a>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="staff.html">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="patients.html">Patient</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lab.html">Laboratory</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="pharmacy.html">Pharmacy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary ml-lg-3" href="#">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
+</header>
+<!-- Header Close -->
+
+<div class="page-banner overlay-dark bg-image" style="background-image: url(../assets/img/Bg_Parmacy.png);">
+  <div class="banner-section">
+    <div class="container text-center wow fadeInUp">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+        </ol>
+      </nav>
+      <h1 class="font-weight-normal">Pharmacy Management</h1>
+    </div>
+  </div>
+</div> 
+
+
+
+
+<div class="page-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-lg-12 py-3 wow zoomIn">
+            <div class="card">
+              
+              <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Search Medicine by Name..">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary float-right" type="submit">Search</button>  
+                  </div>
+                </div>
+                
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <H2 class="font-weight-bold">Stock Details</H2>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" class="btn btn-primary float-right"  data-toggle="modal" data-target="#exampleModal">Add New</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Product Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Exp. Date</th>
+                      <th scope="col">Price (RS.)</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Availability</th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">0001</th>
+                      <td>Alendronate (Fosamax)</td>
+                      <td>Treats or prevents osteoporosis</td>
+                      <td>15/11/2023</td>
+                      <td>1250.00</td>
+                      <td>110</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0002</th>
+                      <td>Aminocaproic Acid</td>
+                      <td>Treat minor bleeds(mouth/nose)</td>
+                      <td>2/08/2025</td>
+                      <td>650.00</td>
+                      <td>45</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0003</th>
+                      <td>Amphotericin B(Fungizone®)</td>
+                      <td>Treat fungal infections</td>
+                      <td>07/03/2022</td>
+                      <td>890.60</td>
+                      <td>0</td>
+                      <td>Unavailable</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0004</th>
+                      <td>Bosentan (Tracleer)</td>
+                      <td>Treat high blood pressure in the lungs</td>
+                      <td>12/05/2028</td>
+                      <td>560.80</td>
+                      <td>87</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0005</th>
+                      <td>Ceftazidime (Fortaz®)</td>
+                      <td>Treat infections</td>
+                      <td>05/12/2026</td>
+                      <td>1780.00</td>
+                      <td>56</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0006</th>
+                      <td>Cyclophosphamide</td>
+                      <td>An anticancer medicine</td>
+                      <td>11/03/2023</td>
+                      <td>960.90</td>
+                      <td>12</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0007</th>
+                      <td>Daunorubicin</td>
+                      <td>An anticancer medicine</td>
+                      <td>15/02/2025</td>
+                      <td>300.90</td>
+                      <td>72</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0008</th>
+                      <td>Eltrombopag (Promacta®)</td>
+                      <td>Produce blood cells, primarily platelets</td>
+                      <td>06/01/2023</td>
+                      <td>1050.10</td>
+                      <td>90</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0009</th>
+                      <td>Famciclovir (Famvir®)</td>
+                      <td>Treat viral infections</td>
+                      <td>04/17/2022</td>
+                      <td>700.00</td>
+                      <td>0</td>
+                      <td>Unvailable</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0010</th>
+                      <td>Hydralazine (Apresoline®)</td>
+                      <td>An antihypertensive</td>
+                      <td>09/11/2021</td>
+                      <td>440.25</td>
+                      <td>2</td>
+                      <td>Available</td>
+                      <td> <a href="#" className="btn"> Edit </a> </td>
+                      <td> <a href="#" className="btn" >Delete</a> </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>  
+            </div> 
+          </div>
+          
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">Download Product List</button>
+          </div>
+          
+          
+          
+          <div class="col-md-6">
+            <a href="file:///C:/Users/HP/Desktop/Pharmacy/html/form.html"> 
+              <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">Generate Bill</button>
+            </a>
+          </div>
+          
+
+
+        </div>
+      </div>
+    </div> 
+  </div> 
+  <br>
+
+
+
+  <!-- Footer Open -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Hospital Information</h5>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Wards</a></li>
+            <li><a href="#">Medical Scheduling</a></li>
+            <li><a href="#">Medical Billing and Claims</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Staff Information</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Doctors Information</a></li>
+            <li><a href="#">Nurses Information</a></li>
+            <li><a href="#">Attendants Information</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Patient Information</h5>
+          <ul class="footer-menu">
+            <li><a href="medical_history.html">Medical History</a></li>
+            <li><a href="existing_patient_details.html">Existing Patient Information</a></li>
+            <li><a href="past_patients.html">Past Patient Information</a></li>
+            <li><a href="#">Notice of Privacy Practices</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Laboratory Information</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Report Information</a></li>
+            <li><a href="#">Medical Records</a></li>
+            <li><a href="#">Document and Imaging</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Contact</h5>
+          <p class="footer-link mt-2">UNIVERSITY HOSPITAL KDU WERAHERA, SRI LANKA.</p>
+          <a href="#" class="footer-link"> +94 11 204 4555</a>
+          <a href="#" class="footer-link">uhkdu@kdu.ac.lk </a>     
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+         <h5 class="mt-3">Social Media</h5>
+         <div class="footer-sosmed mt-3">
+          <a href="https://www.facebook.com/University-Hospital-KDU-1745027225787208" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+          <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
+          <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
+          <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
+          <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+    <p id="copyright">Copyright &copy; 2021 <a href="https://uhkdu.kdu.ac.lk/" target="_blank">UHKDU</a>. All right reserved</p>
+  </div>
+</footer>
+<!-- Footer Close -->
+
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="../assets/vendor/wow/wow.min.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/jquery-3.2.1.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/popper.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/select2/select2.min.js"></script>
+<script src="../assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script>
+  $('.js-pscroll').each(function(){
+    var ps = new PerfectScrollbar(this);
+
+    $(window).on('resize', function(){
+      ps.update();
+    })
+  });
+
+
+</script>
+<script src="../assets/js/js/main.js"></script>
+
+</body>
+</html>
